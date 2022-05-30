@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+            src="https://kit.fontawesome.com/7f07b972d2.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;800;900&display=swap");
+        </style>
+        <link rel="stylesheet" href="public/css/form.css" />
+        <title>VEÏNAS Contacto</title>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar">
+                <div class="box-navbar">
+                    <div class="items-navbar" id="navbarToggler">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html"
+                                    >Productos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="showroom.html"
+                                    >Showroom</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrate.html"
+                                    >Registrate</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">SALE</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-nav">
+                            <button class="btn-login" type="submit">
+                                LOGIN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <form id="formulario" action="procesar.php" method=""> 
+            <h2>Registrate en <b>VEÏNAS</b></h2>
+            <div class="form-group">
+                <input type="text" id="nombre" required />
+                <span class="barra"></span>
+                <label>Nombre</label>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <input type="text" id="apellido" required />
+                <span class="barra"></span>
+                <label>Apellido</label>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <input type="text" id="direccion" required />
+                <span class="barra"></span>
+                <label>Dirección</label>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required />
+                <span class="barra"></span>
+                <label>Correo</label>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password"  required />
+                <span class="barra"></span>
+                <label>Contraseña</label>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <input id="passConfirma" type="password" required />
+                <span class="barra"></span>
+                <label>Confirmar Contraseña</label>
+                <p></p>
+            </div>
+            <button type="submit" class="btn-enviar" id="btnEmpezar">
+                Enviar
+            </button>
+        </form>
+        <script src="public/js/validaciones.js"></script>
+    </body>
+</html>
